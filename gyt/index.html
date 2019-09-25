@@ -1,0 +1,784 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>国颐堂养发SPA馆</title>
+  <link rel="icon" href="./images/favour.ico">
+  <!-- <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_790434_e9oinqxpwqg.css"> -->
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+    html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #F8F8F8;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;  }
+address,cite,dfn,em,var, i {font-style:normal;}
+body {font-size: 16px; line-height: 1.5; font-family:'Microsoft Yahei','simsun','arial','tahoma';  color: #222; background: #eee; }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
+button,input,select,textarea{font-size:100%;}
+fieldset,img{border:0;}
+a { text-decoration: none; color: #666; background: none }
+ul, ol { list-style: none; }
+:focus{ outline:none;}
+.clearfix{ clear: both; content: ""; display: block; overflow: hidden }
+.clear{clear: both;}
+
+.wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+.header_mark{
+  background: url(./images/banner.jpg)no-repeat top;
+  width: 100%;
+}
+ .header{
+  height: 176px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color:#fff;
+  display: flex;
+  justify-content: space-between;
+}
+.flex{
+  display: flex;
+}
+.center{
+  align-items: center;
+}
+.align_between{
+  justify-content: space-between;
+}
+.logo{
+  width: 98px;
+  height: 98px;
+  margin-right: 22px;
+}
+.text_right{
+  text-align: right;
+}
+.nav{
+  background: rgba(0,0,0,0.5);
+}
+.nav a{
+  font-size: 18px;
+  color:#B0B0B0;
+  flex: 1;
+  height: 54px;
+  text-align: center;
+  line-height: 54px;
+  cursor: pointer;
+}
+.nav a:hover{
+  background: rgba(242,187,60,0.6);
+  color: #fff;
+}
+.banner {
+  width: 100%;
+  height: 830px;
+  display: block;
+  background: url(./images/banner2.jpg)no-repeat top;
+}
+.with_gyt{
+  height: 839px;
+  background: #F8F8F8;
+}
+.title{
+  text-align: center;
+  padding: 50px 0 30px;
+}
+.title p{
+  text-align: center;
+  color: #000000;
+  font-size: 27px;
+}
+.text{
+  font-size: 18px;
+  line-height: 36px;
+  color:#575757;
+}
+.learn_more{
+  padding: 0 20px;
+  height:35px;
+  line-height: 35px;
+  background:rgba(242,187,60,1);
+  border-radius:10px;
+  margin-top: 28px;
+  text-align: center;
+  color: #fff;
+  margin: 27px auto 0;
+  cursor: pointer;
+}
+.align_center{
+  text-align: center;
+}
+.store_image{
+  background: url('./images/img_layout5.jpg');
+}
+.image>img{
+  margin:30px 0 20px;
+  text-align: center;
+  width: auto;
+}
+.image_list {
+  width: 1063px;
+  justify-content: space-between;
+}
+.cloumn{
+  flex-direction: column;
+}
+.join{
+  background: #fff;
+  padding-bottom: 54px;
+}
+.relative{
+  position: relative;
+  width: 284px;
+  height: 196px;
+  overflow: hidden;
+}
+.relative>div{
+  position: absolute;
+  padding:58px 0 0 35px;
+  box-sizing: border-box;
+}
+.relative:hover{
+  -moz-box-shadow:0 0 5px #939393;
+  -webkit-box-shadow:0 0 5px #E3C486;
+  box-shadow: 0 0 5px #939393;
+}
+.relative div p:nth-child(1){
+  font-size:34px;
+font-family:SourceHanSansCN;
+font-weight:bold;
+color:rgba(39,39,39,1);
+}
+.relative div p:nth-child(2){
+  font-size: 22px;
+  color:#000000;
+}
+.relative>img{
+  -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+.relative img:hover{
+  -webkit-transform: scale(1.1,1.1);
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+.inline_block{
+  display: inline-block;
+}
+.honour{
+  background: #F8F8F8;
+  padding-bottom: 36px;
+  width: 100%;
+}
+.scroll_box{
+  position: relative;
+  overflow: hidden;
+  height: 260px;
+}
+.honour .brand{
+  background: #fff;
+  padding: 23px 0 39px;
+  position: absolute;
+  left: 0;
+  height: 260px;
+  top:0;
+  white-space: nowrap;
+  /* overflow: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling:touch;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none; */
+
+}
+.honour .brand ::-webkit-scrollbar {
+  background-color: transparent;
+}
+.honour  .brand>div{
+  margin: 0 44px;
+  display: inline-block;
+  vertical-align: top;
+  /* float: left; */
+}
+.honour .brand p {
+  text-align: center;
+  font-size: 18px;
+  font-family:SourceHanSansCN;
+  color: #000000;
+}
+.map{
+  background: #fff;
+  padding-bottom: 30px;
+}
+.news{
+  padding-bottom: 60px;
+}
+.news .tab{
+  height: 55px;
+  padding: 15px 0;
+  box-sizing: border-box;
+  background: #EAEAEA;
+  margin-bottom: 28px;
+}
+.news .tab div{
+  flex: 1;
+  color: #000000;
+}
+.news .tab div:nth-child(1){
+  border-right:1px solid #575757;
+}
+.news .tab div:nth-child(2){
+  border-right:1px solid  #575757;
+}
+.news .tab_list{
+  justify-content: space-around;
+}
+.news .tab_list>div{
+  width: 290px;
+}
+.news .list_title{
+  font-size:20px;
+font-family:SourceHanSansCN;
+font-weight:400;
+color:rgba(0,0,0,1);
+line-height:26px;
+margin:10px 0;
+}
+.news .list_text{
+  font-size:16px;
+font-family:SourceHanSansCN;
+font-weight:300;
+color:rgba(87,87,87,1);
+line-height:24px;
+margin-bottom: 30px;
+}
+.news .icon_list{
+  margin-bottom: 13px;
+  align-items: center;
+}
+.news .icon_list img{
+  margin-right: 8px;
+}
+.concat{
+  background: #131616;
+  padding-bottom: 35px;
+}
+.concat .concat_item{
+  justify-content: space-around;
+  font-size: 18px;
+}
+.concat .concat_item>div{
+  text-align: left;
+  width: 290px;
+}
+.concat .select{
+  font-size:20px;
+  font-family:SourceHanSansCN;
+  font-weight:300;
+  color:rgba(255,255,255,1);
+  margin-bottom: 30px;
+}
+.concat .phone img{
+  margin-right: 10px;
+}
+.concat .secon_title{
+  font-size:18px;
+  font-family:SourceHanSansCN;
+  font-weight:400;
+  color:rgba(176,176,176,1);
+  margin:20px 0 13px;
+}
+.concat .phone {
+  font-size:31px;
+  font-family:SourceHanSansCN;
+  font-weight:bold;
+  margin-bottom: 20px;
+}
+.concat .address{
+  font-size:20px;
+  font-family:SourceHanSansCN;
+  font-weight:bold;
+  color:rgba(230,230,230,1);
+}
+.concat .select img{
+  margin-right: 10px;
+}
+.message{
+  background:rgba(230,230,230,1);
+  border-radius:15px;
+  height: 330px;
+  width: 289px;
+  padding:17px 23px 18px;
+  box-sizing: border-box;
+}
+.message input{
+  display: block;
+  height: 40px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  line-height: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.message textarea{
+  height: 88px;
+  display: block;
+  width: 223px;
+  padding-left: 10px;
+}
+
+.footer{
+  border-top: 1px solid #4C4C4C;
+  background: #131616;
+  padding-bottom: 32px;
+}
+.footer p{
+  line-height: 24px;
+  font-size: 16px;
+  color:#CACACA;
+}
+.footer p:nth-child(1){
+  margin-top: 25px;
+}
+.footer p:nth-child(2){
+  margin-top: 27px;
+  text-align: center;
+}
+.footer p:nth-child(3){
+  text-align: center;
+}
+.fs18{
+  font-size:18px;
+  font-family:SourceHanSansCN;
+  font-weight:300;
+  color:rgba(255,255,255,1);
+}
+.align_item{
+  align-items: center;
+}
+.video{
+  width: 699px;
+  padding-top: 38px;
+  margin:0 auto;
+}
+.video img{
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	font-size:18px;
+font-family:SourceHanSansCN;
+font-weight:300;
+color:rgba(105,106,106,1);
+}
+ 
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	font-size:18px;
+font-family:SourceHanSansCN;
+font-weight:300;
+color:rgba(105,106,106,1);
+}
+ 
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	font-size:18px;
+font-family:SourceHanSansCN;
+font-weight:300;
+color:rgba(105,106,106,1);
+}
+ 
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	font-size:18px;
+font-family:SourceHanSansCN;
+font-weight:300;
+color:rgba(105,106,106,1);
+}
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <!-- <div class="header_mark">
+        
+    </div> -->
+    <div class="banner" id='#2'>
+        <div class="header" id="#1">
+            <div class="wrap flex align_between">
+              <div class="flex" style="margin-top: 48px;">
+                <img class='logo' src="./images/LOGO.png">
+                <div style="height: 98px;">
+                  <p style="font-size: 34px;font-weight: 500;">国颐堂养发SPA馆</p>
+                  <p style="font-size: 21px;">国人的养发品牌</p>
+                </div>
+              </div>
+              <div style="margin-top: 81px;">
+                <p class="text_right" style="color:#B0B0B0;font-size:16px;">全国加盟热线</p>
+                <p class="text_right" style="font-size: 21px;font-weight:bold;"><img style="margin-right: 10px;" src="./images/phone_a.png">400 026 9779</p>
+              </div>
+            </div>
+          </div>
+          <div class="nav">
+            <div class="wrap flex" >
+              <a href="#1"  onclick="scrollToAnchor('#1')">首页</a>
+              <a href="#2" onclick="scrollToAnchor('#2')">品牌简介</a>
+              <a href="#3" onclick="scrollToAnchor('#3')">新闻资讯</a>
+              <a href="#4" onclick="scrollToAnchor('#4')">产品研发</a>
+              <a href="#5" onclick="scrollToAnchor('#5')">加盟国颐堂</a>
+              <a href="#6" onclick="scrollToAnchor('#6')">加盟优势</a>
+              <a href="#7" onclick="scrollToAnchor('#7')">国颐堂商学院</a>
+              <a href="#8" onclick="scrollToAnchor('#8')">联系我们</a>
+            </div>
+          </div>
+      <!-- <img src="./images/banner.jpg" alt="图片加载失败"> -->
+    </div>
+    <div class="with_gyt">
+      <div class="wrap">
+        <div class="title">
+          <p>关于国颐堂</p>
+          <img src="./images/our_story.png"/>
+        </div>
+        <div class="text">国颐堂养发SPA馆，以北京佰草国颐堂医学研究院为依托，循“养于内、美于外”颐养之道，集草本力量结合现代生物科技，研制出解决现代人脱发、白发、头发枯黄、烫染受损、头皮、面部等各种发肤问题的产品。设立防脱生发、白发转黑、秀发修护、头皮养护、面部护理、体质养生六大养颜养发项目。各地国颐堂养发馆加盟店专为当地爱美人士提供集养颜、养发、SPA休闲为一体的一站式服务。</div>
+        <div class="learn_more" style="width: 131px;">了解更多>>></div>
+        <div class="video">
+          <video controls width="699" height="394" poster="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1569336674979&di=a7f7963a0d998ead97ba088561bcfe3a&imgtype=0&src=http%3A%2F%2Fs9.sinaimg.cn%2Fmw690%2F001lhuDngy6R1GJXg12f8%26690" autoplay src="http://www.w3school.com.cn/i/movie.ogg">
+                <source src='http://www.w3school.com.cn/i/movie.ogg' type='video/mp4'>   <!-- 当‘视频1.mp4’无法播放时，会跳转到src='视频2.mp4' -->
+                <source src='http://www.w3school.com.cn/i/movie.ogg' type='video/ogg'>   <!-- 当浏览器不支持MP4格式的视频时，会自动找此处ogv格式的视频 -->
+                <source src='http://www.w3school.com.cn/i/movie.ogg' type='video/webm'>
+              您的浏览器不支持 video 标签。
+          </video>
+          <img src="./images/bg.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="store_image" id="#4">
+      <div class="wrap">
+        <div class="title">
+          <p>门店形象</p>
+          <img src="./images/store_mage.png"/>
+        </div>
+        <div class="text">国颐堂秉持打造“养发馆中的五星级酒店”的经营理念，从迎宾、接待到头皮检测、养发体验、店面环境......从头到尾为顾客提供五星式的养发服务体验。以“新中式 轻国风”的高端格调落地，一经面世便深受国粉和加盟伙伴们的盛赞，逐渐成为行业的服务典范！</div>
+        <div class="image  flex cloumn center">
+          <img src="./images/store.jpg"/>
+          <div class="flex image_list">
+              <img src="./images/71.png" alt="">
+              <img src="./images/72.png" alt="">
+              <img src="./images/73.png" alt="">
+              <img style="margin:0;" src="./images/74.png" alt="">
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="join" id="#6">
+        <div class="wrap">
+            <div class="title">
+              <p>加盟优势</p>
+              <img src="./images/join_adv.png"/>
+            </div>
+        <div class="join_img">
+          <div class="relative inline_block">
+              <img src="./images/banner2.png"/>
+          </div>
+          <div class="relative inline_block">
+            <div>
+                <p>品牌聚势</p>
+                <p>国人的养发品牌</p>
+            </div>
+          </div>
+          <div class="relative inline_block">
+              <img src="./images/six.png"/>
+          </div>
+          <div class="relative inline_block">
+            <div>
+                <p>模式制胜</p>
+                <p>一店赚六店的钱</p>
+            </div>
+          </div>
+            <div class="relative inline_block">
+              <div>
+                <p>运筹帷幄</p>
+                <p>保姆式创业扶持</p>
+              </div>
+            </div>
+          <div class="relative inline_block">
+              <img src="./images/img_layout2.png"/>
+          </div>
+          <div class="relative inline_block">
+            <div>
+                <p>营销利器</p>
+                <p>
+                    5G新零售智慧门店
+系统赋能
+                </p>
+            </div>
+          </div>
+          <div class="relative inline_block"><img src="./images/img_layout3.png"/></div>
+          <div class="relative inline_block">
+            <div>
+                <p>行业丰碑</p>
+                <p>中国长发科技馆</p>
+            </div>
+          </div>
+          <div class="relative inline_block">
+            <div>
+              <p>大师传承</p>
+              <p>
+                  跟着四位国医大师
+养发养健康
+              </p>
+            </div>
+          </div>
+          <div class="relative inline_block"><img src="./images/img_layout4.png"/></div>
+          <div class="relative inline_block">
+            <div>
+                <p>品牌聚势</p>
+                <p>国人的养发品牌</p>
+            </div>
+          </div>
+        </div>
+        <div class="learn_more" style="width: 176px;">国颐堂十大优势>>></div>
+      </div>
+    </div>
+    <div class="honour" id="#7">
+      <div class="wrap">
+        <div class="title">
+          <p>国颐堂荣誉</p>
+          <img src="./images/honor.png"/>
+        </div>
+        <div class="scroll_box">
+            <div class="brand" id='autoScroll'>
+                <div>
+                  <img src="./images/brand.png" alt="">
+                  <p>中国驰名品牌</p>
+                </div>
+                <div>
+                    <img src="./images/award1.png" alt="">
+                  <p>前海股权交易中心挂牌企业</p>
+                </div>
+                <div>
+                    <img src="./images/heard_brand.png" alt="">
+                    <p>中国企业十大匠心品牌</p>
+                </div>
+                <div>
+                  <img src="./images/movie.png" alt="">
+                  <p>
+                      CCTV发现之旅《时代影像》<br/>
+      栏目展播品牌
+                  </p>
+                </div>
+                <div>
+                    <img src="./images/award_heard.png" alt="">
+                    <p>
+                      年度匠心品牌
+                    </p>
+                  </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="map" id="#5">
+      <div class="wrap">
+        <div class="title">
+          <p>1600+加盟商信赖之选</p>
+          <img src="./images/1600add.png"/>
+        </div>
+      </div>
+      <img src="./images/group2.jpg" alt="">
+    </div>
+    <div class="news" id="#3">
+      <div class="wrap">
+          <div class="title">
+            <p>最新资讯</p>
+            <img src="./images/news.png"/>
+          </div>
+          <div class="tab flex">
+            <div class="align_center">新闻中心 / Latest News</div>
+            <div class="align_center">加盟资讯/Joining News</div>
+            <div class="align_center">养发资讯/Hair Care News</div>
+          </div>
+          <div class="tab_list flex">
+            <div>
+              <img src="./images/give.png" alt="">
+              <p class="list_title">
+                全国养发馆加盟商的成功才能成就国颐堂
+              </p>
+              <p class="list_text">作为投资者该如何选择自己的合作伙伴，这是很多的投资者一直想要的答案。当很多企业还在漫天打广告寻找投资者的时候，国颐堂的加盟商主动给总部推荐意向合作者...
+              </p>
+              <div class="icon_list flex">
+                <img src="./images/front.png" alt="">
+                <span>美业市场养发馆加盟的优势有哪些？</span>
+              </div>
+              <div class="icon_list flex">
+                  <img src="./images/commit.png" alt="">
+                  <span>
+                    经营养发馆加盟店的方法有哪些?</span>
+              </div>
+              <div class="icon_list flex">
+                  <img src="./images/appoint.png" alt="">
+                  <span>
+                    养发护发加盟，考察养发馆要注意哪些事项？</span>
+                </div>
+            </div>
+            <div>
+                <img src="./images/girl.png" alt="">
+                <p class="list_title">
+                    养发馆加盟为什么能成为创业
+                    项目的热点
+                </p>
+                <p class="list_text">在美容美发行业的细分领域中，最火爆且最有钱途的当属养发护发领域。在市场需求方面来看，目前我国有大约 3 亿发质受损人群，护发刚需人群数量庞大，但全国的养发馆只有...
+                </p>
+                <div class="icon_list flex">
+                  <img src="./images/year_end.png" alt="">
+                  <span>养发馆加盟十大品牌中哪家品牌比较靠谱？</span>
+                </div>
+                <div class="icon_list flex">
+                    <img src="./images/dance.png" alt="">
+                    <span>养发护发加盟，品牌选择至关重要！</span>
+                </div>
+                <div class="icon_list flex">
+                    <img src="./images/work.png" alt="">
+                    <span>养发馆加盟项目发展前景怎么样？</span>
+                  </div>
+              </div>
+              <div>
+                  <img src="./images/beaty.png" alt="">
+                  <p class="list_title">
+                      夏季养发护发对头发的养护注意
+                      事项
+                  </p>
+                  <p class="list_text">夏季到了，我们在用养发护发品牌时要注意事项有什么呢？我们都清楚造成头发问题的因素有很多，在养发护发过程中我们也要正确的使用技巧，做到对头发有效的护理。近来一段时间...
+                  </p>
+                  <div class="icon_list flex">
+                    <img src="./images/wash.png" alt="">
+                    <span> 美业市场养发馆加盟的优势有哪些？</span>
+                  </div>
+                  <div class="icon_list flex">
+                      <img src="./images/blow.png" alt="">
+                      <span>
+                        养发馆加盟店教你怎样预防脱发的产生！</span>
+                  </div>
+                  <div class="icon_list flex">
+                      <img src="./images/hair.png" alt="">
+                      <span>
+                        中医养发教大家日常养发护发？</span>
+                    </div>
+                </div>
+          </div>
+      </div>
+    </div>
+    <div class="concat" id="#8">
+      <div class="wrap">
+        <div class="title">
+          <p style="color: #fff;">联系我们</p>
+          <img src="./images/contact.png"/>
+        </div>
+        <div class="concat_item flex">
+          <div>
+            <div class="select"><img src="./images/arrow_a.png" alt="">联系方式</div>
+            <p class="secon_title">加盟热线</p>
+            <div class="phone" style='color:#F2BB3C;'><img src="./images/phone_b.png" alt="">400 026 9599</div>
+            <p class="secon_title">总部电话</p>
+            <div class="phone" style="color: #fff;"><img src="./images/phone_a.png" alt="">400 026 9599</div>
+            <p class="secon_title">总部地址</p>
+            <div class="address">广州市白云区黄园路33号国际单位二期A3栋3楼</div>
+          </div>
+          <div>
+              <div class="select"><img src="./images/arrow_a.png" alt="">留言方式</div>
+              <div class="message">
+                <input placeholder="您的姓名" type="text">
+                <input placeholder="您的电话" type="text">
+                <input placeholder="您的预算" type="text">
+                <input placeholder="您的开店地址" type="text">
+                <textarea placeholder="备注"></textarea>
+              </div>
+          </div>
+          <div>
+            <div class="select"><img src="./images/arrow_a.png" alt="">关注我们</div>
+            <div class="flex align_item" style="margin:20px 0 34px"><img  style="margin-right: 23px;" src="./images/code_a.png" alt=""><span class="fs18">国颐堂加盟合作微信公众号</span></div>
+            <div class="flex align_item"><img  style="margin-right: 23px;" src="./images/code_b.png" alt=""><span class="fs18">国颐堂养发SPA馆微信公众号</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrap">
+        <p>
+          友情链接：养发馆加盟 兰蔻官网 女性肌肤护理 美容院加盟 mos管 养发馆加盟排行榜 墙体材料 头道汤加盟 减肥的方法 养发馆加盟 兰蔻<br/>
+          官网 女性肌肤护理 美容院加盟 mos管 养发馆加盟排行榜 墙体材料 头道汤加盟 减肥的方法
+        </p>
+        <p>版权所有：COPYRIGHT 2014-2019 国颐堂养发SPA馆/广州国颐堂化妆品有限公司</p>
+        <p>粤ICP备16093736号-4</p>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  const scrollToAnchor = (anchorName) => {
+    if (anchorName) {
+      // 找到锚点
+      let anchorElement = document.getElementById(anchorName);
+      // 如果对应id的锚点存在，就跳转到锚点
+      if (anchorElement) { anchorElement.scrollIntoView(); }
+    }
+  }
+  window.onload=function(){
+				var oDiv  =  document.getElementById('autoScroll');
+				var oUl = document.getElementById('autoScroll');
+				var Li = oUl.getElementsByTagName('div');//获取所有div
+				oUl.innerHTML = oUl.innerHTML+oUl.innerHTML;//li下的内容进行想加
+				oUl.style.width = Li.offsetWidth*Li.length+'px';//ul的宽度等于每个li的宽度乘以所有li的长度
+				var speed = 2
+				
+				//主方法
+				function move(){
+					//如果左边横向滚动了长度一半之后,回到初始位置
+					
+					if(oUl.offsetLeft<-oUl.offsetWidth/speed){
+						oUl.style.left = '0'
+					}
+					//如果右边横向滚动的距离大于0 就让他的位置回到一半
+					if(oUl.offsetLeft>0){
+						oUl.style.left = -oUl.offsetWidth/speed+'px';
+					}
+					//oUl.style.left = oUl.offsetLeft-2+'px';//进行左横向滚动
+					oUl.style.left = oUl.offsetLeft+speed+'px';//进行右横向滚动
+				}
+				//调用方法
+				var timer = setInterval(move,30)
+				//鼠标指向的时候 暂停
+				oDiv.onmouseover=function(){
+					clearInterval(timer);
+				}	
+				//鼠标离开之后 继续滚动
+				oDiv.onmouseout=function(){
+					 timer = setInterval(move,30)
+				}
+			}
+</script>
+</html>
